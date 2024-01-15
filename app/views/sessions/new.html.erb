@@ -16,9 +16,16 @@
       <%= password_field_tag :password, params[ :password],
                              class: "input-field" %>
     </div>
-    <div class= "actions">
+
+    <div class= "actions ">
       <%= submit_tag "Login", class: "rounded-lg py-3 px-5
- bg-green-600 text-black inline-block font-medium cursor-pointer" %>
+                        bg-green-600 text-white inline-block font-medium cursor-pointer" %>
+    </div>
+    <p class="text-black-300 py-2">
+      New to our site?
+    </p>
+    <div class="inline">
+      <%= link_to 'Create account', new_user_path,  class: "rounded-lg py-3 px-5 bg-green-900 text-white inline-block font-medium cursor-pointer"  %>
     </div>
   <% end %>
 </div>
