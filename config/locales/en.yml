@@ -36,4 +36,25 @@ en:
       products: "Products"
       users: "Users"
       logout: "Log out"
+      login: "Log in"
+
+  store:
+    index:
+      catalog: "Catalog"
+      add_to_cart: "Add to cart"
+
+  orders:
+    index:
+      title: "Orders"
+
+    _order:
+      name: "Name"
+      address: "Address"
+      email: "Email"
+      pay_type: "Pay Type"
+      show_button: "Show this order"
+      edit_button: "Edit this order"
+
+
+
 

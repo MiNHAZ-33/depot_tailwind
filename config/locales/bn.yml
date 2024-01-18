@@ -7,3 +7,20 @@ bn:
       products: "প্রোডাক্টস"
       users: "ব্যবহারকারী"
       logout: "লগ আউট"
+      login: "লগ ইন"
+
+  store:
+    index:
+      catalog: "ক্যাটালগ"
+      add_to_cart: "কার্টে যুক্ত করুন"
+
+  orders:
+    index:
+      title: "অর্ডারসমুহ"
+    _order:
+      name: "নাম"
+      address: "ঠিকানা"
+      email: "ইমেইল"
+      pay_type: "পে টাইপ"
+      show_button: "অর্ডারটি দেখুন"
+      edit_button: "এডিট করুন"

@@ -1,12 +1,11 @@
 <div class="w-full">
   <%= render 'notice' %>
 
-  <h1 class="font-bold text-xl mb-6 pb-2 border-b-2">Catalog</h1>
-
+  <h1 class="font-bold text-xl mb-6 pb-2 border-b-2"><%= t('.catalog') %></h1>
   <ul>
-    <% cache @products do %>
+    <% cache [@products, I18n.locale] do %>
     <% @products.each do |product| %>
-        <% cache product do%>
+        <% cache [product, I18n.locale] do%>
     <li class="flex mb-6">
         <%= image_tag(product.image_url, class:"object-contain w-40 h-48 shadow mr-6") %>
         <div>
@@ -17,7 +16,7 @@
 
         <div class="mt-3">
           <%=  number_to_currency(product. price)  %>
-          <%= button_to 'Add to cart', line_items_path(product_id: product),
+          <%= button_to t('.add_to_cart'), line_items_path(product_id: product),
                         form_class: 'inline',
                         class: 'ml-4 rounded-lg py-1 px-2 text-white bg-green-600 hover:bg-green-900'
           %>

@@ -1,0 +1,8 @@
+<h1>Order is shipped</h1>
+
+<p> We have shipped your recent orders</p>
+
+<table>
+  <tr><th colspan= "2">Qty</th><th>Description</th></tr>
+  <%= render @order.line_items -%>
+</table>
