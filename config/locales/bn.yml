@@ -1,0 +1,9 @@
+bn:
+  layouts:
+    application:
+      title: "বইয়ের দোকান"
+      home: "হোম"
+      orders: "অর্ডার"
+      products: "প্রোডাক্টস"
+      users: "ব্যবহারকারী"
+      logout: "লগ আউট"

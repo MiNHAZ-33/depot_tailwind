@@ -12,23 +12,33 @@
   </head>
 
   <body>
-  <header class="bg-green-700">
+  <header class="bg-green-700 flex items-center justify-between">
     <%= image_tag("logo.svg", alt: 'logo') %>
     <h1><%= @page_title %></h1>
+    <aside data-controller="locale" class="flex-right">
+      <%= form_tag store_index_path, class:'locale' do %>
+        <%= select_tag 'set_locale',
+                       options_for_select(LANGUAGES, I18n.locale.to_s),
+                       onchange: 'this.form.submit()' %>
+        <%= submit_tag 'submit', data:{'locale-target'=>'submit'} %>
+      <% end %>
+    </aside>
   </header>
   <section class="flex">
     <nav class="bg-green-900 p-6">
       <%= render partial: 'layouts/cart', locals: {cart: @cart} %>
       <ul class="text-gray-300 leading-8">
-        <li class="mt-3"><a href= "/">Home</a></li>
+        <li>
+          <%= link_to t('.home'), store_index_url(locale: I18n.locale) %>
+        </li>
       </ul>
       <% if session[:user_id] %>
       <ul class="text-gray-300 leading-8">
-        <li><%= link_to 'Orders', orders_path %></li>
-        <li><%= link_to 'Products', products_path %></li>
-        <li><%= link_to 'Users', users_path %></li>
-        <li><%= button_to 'Logout', logout_path, method: :delete %></li>
-      </ul >
+        <li><%= link_to t('.orders'), orders_path(locale: I18n.locale) %></li>
+        <li><%= link_to t('.products'), products_path(locale: I18n.locale) %></li>
+        <li><%= link_to t('.users'), users_path(locale: I18n.locale) %></li>
+        <li><%= button_to t('.logout'), logout_path(locale: I18n.locale), method: :delete %></li>
+      </ul>
         <% else %>
         <ul class="text-gray-300 leading-8"><li> <%= link_to 'Login', login_path %></li></ul>
       <% end %>

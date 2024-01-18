@@ -28,4 +28,12 @@
 #       enabled: "ON"
 
 en:
-  hello: "Hello world"
+  layouts:
+    application:
+      title: "The book shelf"
+      home: "Home"
+      orders: "Orders"
+      products: "Products"
+      users: "Users"
+      logout: "Log out"
+
