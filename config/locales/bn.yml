@@ -17,6 +17,10 @@ bn:
   orders:
     index:
       title: "অর্ডারসমুহ"
+
+    new:
+      title: "আপনার ডিটেইলস দিন"
+
     _order:
       name: "নাম"
       address: "ঠিকানা"
@@ -24,3 +28,86 @@ bn:
       pay_type: "পে টাইপ"
       show_button: "অর্ডারটি দেখুন"
       edit_button: "এডিট করুন"
+      delete_button: "ডিলিট করুন"
+      back_button: "পিছনে যান"
+
+    form:
+      name: "নাম"
+      address: "ঠিকানা"
+      email: "ইমেইল"
+      pay_type: "পে টাইপ"
+      create: "অর্ডার তৈরি করুন"
+      pay_prompt: "পেমেন্ট মেথড সিলেক্ট করুন"
+      pay_types:
+        "Check": "চেক"
+        "Credit card": "ক্রেডিট কার্ড"
+        "Purchase order": "ক্যাশ অন্য ডেলিভারি"
+    check:
+      route: "রাউটিং নাম্বার "
+      account: "একাউন্টিং নাম্বার"
+    cc:
+      cn: "ক্রেডিট কার্ড নাম্বার "
+      ex: "এক্সপায়ার ক্রেডিট "
+    po:
+      po_no: "পি ও নাম্বার"
+
+  carts:
+    cart:
+      title: "আপনার কার্ট"
+      empty: "কার্ট মুছে ফেলুন"
+      checkout: "চেক আউট"
+
+  products:
+    index:
+      title: "প্রোডাক্টস"
+      show_button: "দেখুন"
+      new_button: "নতুন প্রোডাক্ট"
+      edit_button: "এডিট"
+      delete_button: "ডিলিট"
+      back_button: "ব্যাক"
+
+    _product:
+      title: "টাইটেল"
+      description: "বর্ণনা"
+      img_url: "ছবির লিঙ্ক"
+      price: "মূল্য"
+
+    form:
+      title: "টাইটেল"
+      description: "বর্ণনা"
+      img_url: "ছবির লিঙ্ক"
+      price: "মূল্য"
+      submit: "সাবমিট"
+      new: "নতুন প্রোডাক্ট"
+      back: "পিছনে যান"
+
+  users:
+    index:
+      title: "ব্যবহারকারী"
+      new: "নতুন ইউজার"
+
+    user:
+      name: "নাম"
+      show: "ইউজারকে দেখুন"
+      edit: "ইউজার এডিট করুন"
+
+    show:
+      edit: "ইউজার এডিট করুন"
+      delete: "ইউজার ডিলিট করুন"
+      back: "পিছনে যান"
+
+    new:
+      title: "নতুন ইউজার"
+      back: "পিছনে যান"
+
+    edit:
+      title: "ইউজার এডিট করুন"
+      show: "ইউজারকে দেখুন"
+      back: "পিছনে যান"
+
+    form:
+      title: "নতুন ইউজার"
+      name: "নাম"
+      password: "পাসওয়ার্ড"
+      confirm: "কনফার্ম পাসওয়ার্ড"
+      submit: "সাবমিট"

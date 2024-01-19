@@ -15,13 +15,13 @@
   <header class="bg-green-700 flex items-center justify-between">
     <%= image_tag("logo.svg", alt: 'logo') %>
     <h1><%= @page_title %></h1>
-    <aside data-controller="locale">
-      <%= form_tag store_index_path, class:'locale' do %>
+    <aside>
+      <%= form_tag store_index_path do %>
         <%= select_tag 'set_locale',
                        options_for_select(LANGUAGES, I18n.locale.to_s),
                        onchange: 'this.form.submit()' %>
-        <%#= submit_tag 'submit', data:{'locale-target'=>'submit'} %>
       <% end %>
+    </aside>
     </aside>
   </header>
   <section class="flex">

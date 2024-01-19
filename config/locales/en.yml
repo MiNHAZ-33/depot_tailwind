@@ -47,6 +47,9 @@ en:
     index:
       title: "Orders"
 
+    new:
+      title: "Enter your details"
+
     _order:
       name: "Name"
       address: "Address"
@@ -54,7 +57,87 @@ en:
       pay_type: "Pay Type"
       show_button: "Show this order"
       edit_button: "Edit this order"
+      delete_button: "Delete this order"
+      back_button: "Back"
 
+    form:
+      name: "Name"
+      address: "Address"
+      email: "Email"
+      pay_type: "Pay Type"
+      create: "Place your order"
+      pay_prompt: "Select a payment method"
+      pay_types:
+        "Check": "Check"
+        "Credit card": "Credit Card"
+        "Purchase order": "Purchase Order"
 
+    check:
+      route: "Routing Number"
+      account: "Accounting Number"
+    cc:
+      cn: "Credit card number"
+      ex: "Expiration date"
+    po:
+      po_no: "Po Number"
 
+  carts:
+    cart:
+      title: "Your cart"
+      empty: "Empty your cart"
+      checkout: "Checkout"
+
+  products:
+    index:
+      title: "Products"
+      show_button: "Show"
+      new_button: "New Product"
+      edit_button: "Edit"
+      delete_button: "Delete"
+      back_button: "Back"
+
+    _product:
+      title: "Title"
+      description: "Description"
+      img_url: "Image Url"
+      price: "Price"
+
+    form:
+      title: "Title"
+      description: "Description"
+      img_url: "Image Url"
+      price: "Price"
+      submit: "Submit"
+      new: "New Product"
+      back: "Back"
+
+  users:
+    index:
+      title: "Users"
+      new: "New user"
+
+    user:
+      name: "Name"
+      show: "Show this user"
+      edit: "Edit this user"
+
+    show:
+      edit: "Edit this user"
+      delete: "Delete this user"
+      back: "Back"
+
+    new:
+      title: "New user"
+      back: "Back to user"
+
+    edit:
+      title: "Editing user"
+      show: "Show this user"
+      back: "Back to user"
+
+    form:
+      name: "Name"
+      password: "Password"
+      confirm: "Confirm Password"
+      submit: "Submit"
 
