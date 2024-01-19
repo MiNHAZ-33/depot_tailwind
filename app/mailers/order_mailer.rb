@@ -10,7 +10,11 @@ class OrderMailer < ApplicationMailer
   def received(order)
    @order = order
 
-   mail to: order.email, subject: 'Book store confirmation'
+   mail to: order.email, subject: 'Book Store Order Confirmation' do |format|
+    format.text
+    format.html
+   end
+
   end
 
   # Subject can be set in your I18n file at config/locales/en.yml

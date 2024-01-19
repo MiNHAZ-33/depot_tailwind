@@ -111,3 +111,15 @@ bn:
       password: "পাসওয়ার্ড"
       confirm: "কনফার্ম পাসওয়ার্ড"
       submit: "সাবমিট"
+
+  activerecord:
+    errors:
+      models:
+        order:
+          attributes:
+            name:
+              blank: "নাম অবশ্যই প্রদান করতে হবে"
+            address:
+              blank: "ঠিকানা অবশ্যই প্রদান করতে হবে"
+            email:
+              blank: "ইমেইল অবশ্যই প্রদান করতে হবে"
