@@ -30,7 +30,7 @@ module DepotTailwind
     # config.i18n.default_locale = :bn
     # config.i18n.available_locales = [:en, :bn]
     config.after_initialize do
-      I18n.default_locale = :bn
+      I18n.default_locale = :en
       I18n.available_locales = [:en, :bn]
     end
 
